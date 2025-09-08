@@ -27,6 +27,17 @@
         --fs-title4:18px;
     }
 /* 4. Destock */
+header{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: url("../img/fondoo.jpg");
+    background-size: cover;
+    /* background-position: center;  */
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
 
 /* 5. Tablet estilos y la adactacion*/
     @media screen and (min-width:768px) and (max-width:1080px){
