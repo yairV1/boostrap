@@ -27,18 +27,120 @@
         --fs-title4:18px;
     }
 /* 4. Destock */
+*{
+    scrollbar-width: none;
+}
 header{
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 170vh;
     background: url("../img/fondoo.jpg");
     background-size: cover;
     /* background-position: center;  */
     background-position-x: center;
     background-position-y: bottom;
+    padding-top: 30px;
 }
 
+.bg-trasparente{
+    background: transparent;
+}
 
+header nav .logo{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+header nav .logo:hover{
+    color: var(--white-color);
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+#navbarNav ul a{
+    color: var(--white-color);
+    font-size: var(--fs-text);
+    margin: 0 15px;
+    padding: 10px;
+    border-bottom: 1px solid transparent; /*con esto se hace para que salga un estilo hover con un fondo*/
+    transition: .5s;
+}
+
+#navbarNav ul a:hover{
+    border-bottom: 1px solid var(--white-color);
+    
+}
+
+header .bag-button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+}
+
+header .bag-button .contador{
+    width: 26px;
+    height: 26px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--fs-text);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+
+}
+
+#hero{
+    width: 100%;
+    text-align: center;
+    /* background: red; */
+    padding: 90px 200px;
+}
+#hero h2{
+    font-size: var(--fs-title1);
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+#hero p{
+    color: var(--white-color);
+    font-size: var(--fs-title3);
+    padding: 30px 200px;
+}
+#hero form{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+#hero form input{
+    border-radius: 40px;
+    padding: 15px 60px 15px 20px;
+    width: 370px;
+    font-size: var(--fs-title4);
+    border: 2px solid #fff;
+    background: #ffffff4b;
+    color: var(--white-color);
+    outline: none;
+}
+
+#hero form input::placeholder{
+    color: var(--white-color);
+}
+
+#hero form button{
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    border: none;
+    color: var(--white-color);
+    position: absolute;
+    left: 83%;
+    bottom: 19%;
+}
 /* 5. Tablet estilos y la adactacion*/
     @media screen and (min-width:768px) and (max-width:1080px){
 
