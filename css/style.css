@@ -22,8 +22,8 @@
         --dark-color: #000;
         --fs-text: 16px;
         --fs-title1:80px;
-        --fs-title2:42px;
-        --fs-title3:24px;
+        --fs-title2:38px;
+        --fs-title3:22px;
         --fs-title4:18px;
     }
 /* 4. Destock */
@@ -34,7 +34,7 @@ header{
     width: 100%;
     position: relative;
     height: 170vh;
-    background: url("../img/fondoo.jpg");
+    background: url("../img/fondoo.png");
     background-size: cover;
     /* background-position: center;  */
     background-position-x: center;
@@ -140,6 +140,42 @@ header .bag-button .contador{
     position: absolute;
     left: 83%;
     bottom: 19%;
+}
+    /* desde aca pasamos con el main */
+
+#choosing{
+    width: 100;
+    position: relative;
+    background: var(--white-color);
+    padding: 120px 0;
+}
+#choosing h2{
+    font-weight: 700;
+    font-size: var(--fs-title2);
+    color: var(--dark-color);
+    padding-top: 20px;
+}
+#choosing h3{
+    font-size: var(--fs-title3);
+    font-weight: 700;
+    color: var(--dark-color);
+}
+#choosing p{
+    font-size: var(--fs-text);
+    color: var(--dark-color);
+    margin-top: 20px;
+}
+#choosing a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+#choosing a i{
+    margin-left: 4px;
+    transition: .5s;
+}
+#choosing a:hover i{
+    margin-left: 15px;
+    transition: .5s;
 }
 /* 5. Tablet estilos y la adactacion*/
     @media screen and (min-width:768px) and (max-width:1080px){
