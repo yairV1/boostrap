@@ -212,6 +212,141 @@ header .bag-button .contador{
 #products li button:hover{
     border: none;
 }
+#products .card-product{
+    margin: 0 15px;
+}
+
+#products .card-product .cont-img{
+    background: #e6e6e6;
+    position: relative;
+    width: 100%;
+    min-height: 210px;
+    border-radius: 20px 20px 0 0;
+}
+
+#products .card-product .cont-img img{
+    width: 220px;
+    position: absolute;
+    top: -70px;
+    margin: 0 auto;
+    left: 10px;
+}
+
+#products .slick-list{
+    padding: 150px 0;
+}
+
+#products .cont-info{
+    background: #fff;
+    text-align: left;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+#products .cont-info p .category{
+    font-size: var(--fs-text);
+    color: #1e1e1e;
+}
+
+#products .cont-info h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+#products .stars i{
+    color: gold;
+}
+
+#products .stars{
+    margin-bottom: 10px;
+}
+
+#products .card-product h4{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    margin: 0;
+}
+
+#products .card-product h4 span{
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+#products .card-product button{
+   background: #0d1b39; 
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   border: none;
+   color: var(--white-color);
+   font-size: 24px;
+}
+
+#products .slick-arrow{
+    background: var(--white-color);
+    width: 50px;
+    height: 50px;
+    z-index: 909;
+    border-radius: 50%;
+    color: #1e1e1e;
+    border: 1px solid #dbdada;
+}
+
+#products .slick-arrow::before{
+    color: #0d1b39;
+}
+    /* desde aca empieza la provide */
+
+#exprexin {
+    width: 100%;
+    position: relative;
+    padding: 140px 0;
+}
+#exprexin .cont-img{
+    position: relative;
+    left: -20px;
+}
+
+#exprexin .cont-img::before{
+    content: "";
+    height: 400px;
+    background: #f7f7f7;
+    width: 300px;
+    z-index: -1;
+    position: absolute;
+    top: -60px;
+    border-radius: 20px;
+}
+#exprexin .cont-img img{
+    box-shadow: 0px 15px 19px -10px #af7d43;
+    border-radius: 0 40px 40px 0;
+}
+#exprexin h3{
+    padding: 5px;
+    color: var(--primary-color);
+    font-size: var(--fs-text);
+}
+#exprexin h2{
+    font-size: var(--fs-title2);
+    font-weight: 700;
+}
+#exprexin a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+#exprexin a i{
+    margin-left: 4px;
+    transition: .5s;
+}
+#exprexin a:hover i{
+    margin-left: 15px;
+    transition: .5s;
+}
+#exprexin p{
+    font-size: var(--fs-text);
+}
 /* 5. Tablet estilos y la adactacion*/
     @media screen and (min-width:768px) and (max-width:1080px){
 
