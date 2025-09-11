@@ -98,7 +98,7 @@ header .bag-button .counter-products{
 #hero{
     width: 100%;
     text-align: center;
-    padding: 70px 200px;
+    padding: 70px 5%;
 }
 
 #hero h2{
@@ -110,7 +110,7 @@ header .bag-button .counter-products{
 #hero p{
     color: var(--white-color);
     font-size: var(--fs-title3);
-    padding: 40px 290px;
+    padding: 40px 10%;
 }
 
 #hero form{
@@ -446,8 +446,8 @@ header .bag-button .counter-products{
 
 #materials .imagen img{
     position: relative;
-    left: 49px;
-    bottom: -155px;
+    left: 43px;
+    bottom: -150px;
 }
 
 #materials .imagen::before{
@@ -457,16 +457,16 @@ header .bag-button .counter-products{
     background: #f7f7f7;
     position: absolute;
     z-index: -1;
-    bottom: 270px;
-    right: -130px;
-    border-radius: 20px;
+    bottom: 290px;
+    right: 1px;
+    border-radius: 20px 0;
 }
 
 #materials .imagen img{
     box-shadow: -11px 14px 19px -10px #af7d43;
 }
 
-
+/* desde aca pasamos a los textimonial */
 
 /*6.Estilo de responsive Tablet */
 @media screen and (min-width:768px) and (max-width:1080px){
