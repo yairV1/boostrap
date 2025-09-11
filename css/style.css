@@ -1,229 +1,211 @@
-/* /* Configuracion basica de un archivo css  slickjs*/
-/* 1. Tipografias */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*Configuracion basica de un archivo CSS*/ 
+/*1.Tipografias*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* 2. Iconos */
+/* 2.Iconos*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 
-/* 2.2 estilos enerales */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Merriweather", serif;
-    /*Importamos las tipografias para los titulos que se les pone todo los h*/
+
+/*3.Estilos generales*/
+h1,h2,h3,h4,h5,h6{
+    font-family: "montserrat", sans-serif;
 }
 
-p,
-a,
-button,
-li,
-label,
-input,
-select,
-textarea,
-span {
-    font-family: "Montserrat", sans-serif;
-    /*Estos de aca son los textos y parafos y todo lo que no son titulos*/
+p,a,button,li,label,input,select,textarea,span{
+    font-family: "releway", sans-serif;
 }
 
-/* 3. Variables */
-:root {
-    --primary-color: #e58411;
+/*4.Variables*/
+:root{
+    --primary-color:#e58411;
     --gray-color: #f7f7f7;
     --white-color: #fff;
-    --dark-color: #000;
-    --fs-text: 16px;
+    --dark-color: #1e1e1e;
     --fs-title1: 80px;
     --fs-title2: 38px;
-    --fs-title3: 22px;
+    --fs-titel3: 22px;
     --fs-title4: 18px;
+    --fs-text: 16px;
 }
 
-/* 4. Destock */
-* {
+/*5.Desktop*/
+*{
     scrollbar-width: none;
 }
-
-header {
+header{
     width: 100%;
     position: relative;
-    height: 170vh;
-    background: url("../img/fondoo.png");
+    height: 160vh;
+    background: url("../img/Rectangle\ 1441.png");
     background-size: cover;
-    /* background-position: center;  */
+    /* background-position: center; */
     background-position-x: center;
     background-position-y: bottom;
     padding-top: 30px;
 }
 
-.bg-trasparente {
+.bg-trasparente{
     background: transparent;
 }
 
-header nav .logo {
+header nav .logo{
     color: var(--white-color);
     font-weight: 600;
-    font-size: 24px;
-}
-
-header nav .logo:hover {
-    color: var(--white-color);
-    transform: scale(1.2);
+    font-size: 28px;
     transition: .5s;
 }
 
-#navbarNav ul a {
+header nav .logo:hover{
+    color: var(--white-color);
+    transform: scale(0.9);
+}
+
+#navbarNav li a{
     color: var(--white-color);
     font-size: var(--fs-text);
     margin: 0 15px;
     padding: 10px;
     border-bottom: 1px solid transparent;
-    /*con esto se hace para que salga un estilo hover con un fondo*/
     transition: .5s;
 }
 
-#navbarNav ul a:hover {
-    border-bottom: 1px solid var(--white-color);
-
+#navbarNav li a:hover{
+    border-bottom: 1px solid var(--primary-color);
 }
 
-header .bag-button {
+header .bag-button{
     background: transparent;
     border: none;
-    color: #fff;
-    font-size: 24px;
+    color: var(--white-color);
+    font-size: 26px;
     position: relative;
 }
 
-header .bag-button .contador {
+header .bag-button .counter-products{
     width: 26px;
     height: 26px;
     background: var(--primary-color);
     color: var(--white-color);
     font-size: var(--fs-text);
-    border-radius: 50%;
+    border-radius: 50px;
     position: absolute;
-    bottom: 0;
     right: -10px;
-
+    bottom: 0px;
 }
 
-#hero {
+#hero{
     width: 100%;
     text-align: center;
-    /* background: red; */
-    padding: 90px 200px;
+    padding: 70px 200px;
 }
 
-#hero h2 {
+#hero h2{
     font-size: var(--fs-title1);
     color: var(--white-color);
     font-weight: 700;
 }
 
-#hero p {
+#hero p{
     color: var(--white-color);
     font-size: var(--fs-title3);
-    padding: 30px 200px;
+    padding: 40px 290px;
 }
 
-#hero form {
+#hero form{
     width: 400px;
     margin: 0 auto;
     position: relative;
 }
 
-#hero form input {
+#hero form input{
     border-radius: 40px;
-    padding: 15px 60px 15px 20px;
+    padding: 15px 65px 15px 20px;
     width: 370px;
     font-size: var(--fs-title4);
     border: 2px solid #fff;
-    background: #ffffff4b;
+    background: #f7f7f74b;
     color: var(--white-color);
     outline: none;
 }
 
-#hero form input::placeholder {
+#hero form input::placeholder{
     color: var(--white-color);
 }
 
-#hero form button {
+#hero form button{
     width: 40px;
     height: 40px;
     background: var(--primary-color);
-    border-radius: 50%;
     border: none;
+    border-radius: 50px;
     color: var(--white-color);
     position: absolute;
-    left: 83%;
-    bottom: 19%;
+    right: 6%;
+    top: 15%;
 }
 
-/* desde aca pasamos con el main */
-
-#choosing {
-    width: 100;
+/* Estilos main */
+#choosing{
+    width: 100%;
     position: relative;
     background: var(--white-color);
     padding: 120px 0;
 }
 
-#choosing h2 {
+#choosing h2{
     font-weight: 700;
     font-size: var(--fs-title2);
     color: var(--dark-color);
     padding-top: 20px;
 }
 
-#choosing h3 {
-    font-size: var(--fs-title3);
+#choosing h3{
+    font-size: var(--fs-titel3);
     font-weight: 700;
     color: var(--dark-color);
 }
 
-#choosing p {
+#choosing p{
     font-size: var(--fs-text);
     color: var(--dark-color);
     margin-top: 20px;
 }
 
-#choosing a {
+#choosing a{
     color: var(--primary-color);
     text-decoration: none;
 }
 
-#choosing a i {
+#choosing a i{
     margin-left: 4px;
     transition: .5s;
 }
 
-#choosing a:hover i {
+#choosing a:hover i{
     margin-left: 15px;
-    transition: .5s;
 }
 
-#products {
-    background: var(--gray-color);
-    padding: 50px;
+/* Estilos de products */
+
+#products{
+    width: 100%;
     position: relative;
+    background: var(--gray-color);
     text-align: center;
+    padding: 50px 0;
 }
 
-#products h2 {
+#products h2{
     font-size: var(--fs-title2);
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: var(--dark-color);
 }
 
-#products ul {
-    width: 350px;
+#products ul{
+    width: 420px;
     margin: 0 auto;
     background: #eeeeee;
     padding: 8px;
@@ -232,86 +214,87 @@ header .bag-button .contador {
     justify-content: space-between;
 }
 
-#products li button {
+#products li button{
     color: var(--dark-color);
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: none;
-
 }
 
-#products li button.active {
+#products li button:hover{
+    border: none;
+}
+
+#products li button.active{
     background: var(--white-color);
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
 }
 
-#products li button:hover {
-    border: none;
-}
-
-#products .card-product {
+#products .card-product{
     margin: 0 15px;
 }
 
-#products .card-product .cont-img {
+#products .card-product .cont-img{
     background: #e6e6e6;
     position: relative;
     width: 100%;
-    min-height: 210px;
+    min-height: 220px;
     border-radius: 20px 20px 0 0;
 }
 
-#products .card-product .cont-img img {
+#products .cont-img img{
     width: 220px;
     position: absolute;
     top: -70px;
     margin: 0 auto;
-    left: 10px;
+    left: 0;
+    right: 0;
+    
 }
 
-#products .slick-list {
-    padding: 150px 0;
+#products .slick-list{
+    padding: 160px 0;
 }
 
-#products .cont-info {
-    background: #fff;
+#products .cont-info{
+    background: white;
     text-align: left;
     padding: 20px;
     border-radius: 0 0 20px 20px;
 }
 
-#products .cont-info p .category {
+#products .cont-info p.category {
     font-size: var(--fs-text);
-    color: #1e1e1e;
+    color: #8e8e8e;
 }
 
-#products .cont-info h3 {
-    font-size: 20px;
+#products .cont-info h3{
+    font-size: 22px;
     font-weight: 700;
     color: var(--dark-color);
 }
 
-#products .stars i {
-    color: gold;
+#products .star i{
+    color: #f6b76f;
 }
 
-#products .stars {
-    margin-bottom: 10px;
+#products .star{
+    margin-bottom: 30px;
 }
 
-#products .card-product h4 {
+#products .card-product h4{
     font-size: 22px;
     font-weight: 600;
     display: flex;
     margin: 0;
 }
 
-#products .card-product h4 span {
+#products .card-product h4 span{
     font-size: 15px;
     margin-right: 4px;
 }
 
-#products .card-product button {
+#products .card-product button{
     background: #0d1b39;
     width: 48px;
     height: 48px;
@@ -321,109 +304,141 @@ header .bag-button .contador {
     font-size: 24px;
 }
 
-#products .slick-arrow {
+#products .slick-arrow{
     background: var(--white-color);
-    width: 50px;
-    height: 50px;
-    z-index: 909;
+    width: 20px;
+    padding: 20px;
+    z-index: 999;
     border-radius: 50%;
-    color: #1e1e1e;
+    color: #0d1b39;
     border: 1px solid #dbdada;
+    display: flex;             /* centra el icono dentro */
+    justify-content: center;
+    align-items: center;
+    position: absolute;        /* que se ubique sobre el slider */
+    top: 50%;                  /* lo manda al centro vertical */
+    transform: translateY(-50%);
 }
 
-#products .slick-arrow::before {
+#products .slick-arrow::before{
     color: #0d1b39;
 }
 
-/* desde aca empieza la provide */
-
-#exprexin {
+/* Estilos de experiencias */
+#experiences{
     width: 100%;
     position: relative;
     padding: 140px 0;
 }
 
-#exprexin .cont-img {
+#experiences .img{
     position: relative;
     left: -20px;
 }
 
-#exprexin .cont-img::before {
+#experiences .img::before{
     content: "";
-    height: 400px;
+    width: 400px;
+    height: 300px;
     background: #f7f7f7;
-    width: 300px;
-    z-index: -1;
     position: absolute;
+    z-index: -1;
     top: -60px;
     border-radius: 20px;
 }
 
-#exprexin .cont-img img {
-    box-shadow: 0px 15px 19px -10px #af7d43;
-    border-radius: 0 40px 40px 0;
+#experiences .img::after{
+    content: "";
+    width: 400px;
+    height: 300px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    bottom: 70px;
+    right: 90px;
+    border-radius: 20px;
 }
 
-#exprexin h3 {
-    padding: 5px;
+#experiences .img img{
+    box-shadow: -15px 16px 19px -10px #af7d43;
+}
+
+#experiences .info{
+    padding: 20px 60px 0 0 ;
+}
+
+#experiences .info h3{
     color: var(--primary-color);
-    font-size: var(--fs-text);
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
-#exprexin h2 {
+#experiences .info h2{
     font-size: var(--fs-title2);
     font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    text-transform: uppercase;
 }
 
-#exprexin a {
+#experiences .info p{
+    font-size: var(--fs-text);
+    color: var(--dark-color);
+    margin-top: 20px;
+}
+
+#experiences .info a{
     color: var(--primary-color);
     text-decoration: none;
 }
 
-#exprexin a i {
+#experiences .info a i{
     margin-left: 4px;
     transition: .5s;
 }
 
-#exprexin a:hover i {
-    margin-left: 15px;
-    transition: .5s;
+/* Estilos de materiales */
+#materials{
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    
 }
 
-#exprexin p {
-    font-size: var(--fs-text);
+#materials .datos{
+    padding: 150px 50px;
 }
 
-/* aca empesare la otra */
-#materila h3 {
-    padding: 5px;
+#materials .datos h3{
     color: var(--primary-color);
-    font-size: var(--fs-text);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 0;
 }
 
-#materila h2 {
+#materials .datos h2{
     font-size: var(--fs-title2);
     font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    text-transform: uppercase;
 }
-#materila a {
+
+#materials .datos p{
+    font-size: var(--fs-text);
+    color: var(--dark-color);
+    margin-top: 20px;
+}
+
+#materials .datos a{
     color: var(--primary-color);
     text-decoration: none;
 }
 
-#materila a i {
+#materials .datos a i{
     margin-left: 4px;
     transition: .5s;
 }
-
-#materila a:hover i {
-    margin-left: 15px;
-    transition: .5s;
-}
-
-#materila p {
-    font-size: var(--fs-text);
-}
-/* Columna izquierda: dos imágenes apiladas */
 
 #materials .imagenes img{
     padding: 20px 0;
@@ -447,10 +462,17 @@ header .bag-button .contador {
     border-radius: 20px;
 }
 
-/* 5. Tablet estilos y la adactacion*/
-@media screen and (min-width:768px) and (max-width:1080px) {
-
+#materials .imagen img{
+    box-shadow: -11px 14px 19px -10px #af7d43;
 }
 
-/* 6. Celular estilos y la adactacion*/
-@media screen and (min-width:320px) and (max-width:767px) {}
+
+
+/*6.Estilo de responsive Tablet */
+@media screen and (min-width:768px) and (max-width:1080px){
+
+}
+/*7.Estilo de responsive Smartphone*/
+@media screen and (min-width:320px) and (max-width:767px){
+    
+}
