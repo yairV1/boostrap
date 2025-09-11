@@ -399,14 +399,14 @@ header .bag-button .counter-products{
 
 /* Estilos de materiales */
 #materials{
-    width: 100%;
+    width: 92%;
     position: relative;
-    padding: 50px 0;
+    padding: 40px 0;
     
 }
 
 #materials .datos{
-    padding: 150px 50px;
+    padding: 150px 30px;
 }
 
 #materials .datos h3{
@@ -446,19 +446,19 @@ header .bag-button .counter-products{
 
 #materials .imagen img{
     position: relative;
-    left: 43px;
+    left: 71px;
     bottom: -150px;
 }
 
 #materials .imagen::before{
     content: "";
-    width: 400px;
+    width: 250px;
     height: 300px;
     background: #f7f7f7;
     position: absolute;
     z-index: -1;
     bottom: 290px;
-    right: 1px;
+    right: -109px;
     border-radius: 20px 0;
 }
 
@@ -467,6 +467,112 @@ header .bag-button .counter-products{
 }
 
 /* desde aca pasamos a los textimonial */
+
+#textimonials{
+    width: 100%;
+    position: relative;
+    padding: 90px 0;
+    text-align: center;
+    margin: auto;
+}
+
+#textimonials .slider-reviews {
+    display: flex;
+    gap: 60px; /* separación entre tarjetas */
+}
+
+#textimonials h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+#textimonials h2{
+    font-size: var(--fs-title2);
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+}
+
+#textimonials .card-review{
+    position: relative;
+    padding: 0 30px;
+}
+#textimonials .card-review .cont-info {
+    background: var(--white-color);
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px 20px 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+#textimonials .card-review .cont-info img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+#textimonials .star {
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+#textimonials .star i {
+    margin: 0 2px;
+}
+#textimonials .star i:nth-child(5){
+    opacity: 0.7;
+}
+#textimonials .card-review h4 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+#textimonials .card-review h5 {
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-bottom: 10px;
+    
+}
+
+#textimonials .card-review p {
+    font-size: 15px;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+#textimonials .slick-arrow{
+    background: var(--white-color);
+    width: 20px;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 50%;
+    color: #0d1b39;
+    border: 1px solid #dbdada;
+    display: flex;             /* centra el icono dentro */
+    justify-content: center;
+    align-items: center;
+    position: absolute;        /* que se ubique sobre el slider */
+    top: 50%;                  /* lo manda al centro vertical */
+    transform: translateY(-50%);
+}
+#textimonials .slick-arrow::before{
+    color: #0d1b39;
+}
 
 /*6.Estilo de responsive Tablet */
 @media screen and (min-width:768px) and (max-width:1080px){
