@@ -23,7 +23,7 @@ p,a,button,li,label,input,select,textarea,span{
     --gray-color: #f7f7f7;
     --white-color: #fff;
     --dark-color: #1e1e1e;
-    --fs-title1: 80px;
+    --fs-title1: 75px;
     --fs-title2: 38px;
     --fs-titel3: 22px;
     --fs-title4: 18px;
@@ -37,13 +37,13 @@ p,a,button,li,label,input,select,textarea,span{
 header{
     width: 100%;
     position: relative;
-    height: 160vh;
+    height: 170vh;
     background: url("../img/Rectangle\ 1441.png");
     background-size: cover;
-    /* background-position: center; */
+    background-position: center; 
     background-position-x: center;
     background-position-y: bottom;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .bg-trasparente{
@@ -98,7 +98,7 @@ header .bag-button .counter-products{
 #hero{
     width: 100%;
     text-align: center;
-    padding: 70px 5%;
+    padding: 50px 190px;
 }
 
 #hero h2{
@@ -110,7 +110,7 @@ header .bag-button .counter-products{
 #hero p{
     color: var(--white-color);
     font-size: var(--fs-title3);
-    padding: 40px 10%;
+    padding: 30px 290px;
 }
 
 #hero form{
@@ -249,7 +249,6 @@ header .bag-button .counter-products{
     margin: 0 auto;
     left: 0;
     right: 0;
-    
 }
 
 #products .slick-list{
@@ -269,7 +268,7 @@ header .bag-button .counter-products{
 }
 
 #products .cont-info h3{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--dark-color);
 }
@@ -355,7 +354,7 @@ header .bag-button .counter-products{
     position: absolute;
     z-index: -1;
     bottom: 70px;
-    right: 90px;
+    right: 20px;
     border-radius: 20px;
 }
 
@@ -399,14 +398,14 @@ header .bag-button .counter-products{
 
 /* Estilos de materiales */
 #materials{
-    width: 92%;
+    width: 100%;
     position: relative;
     padding: 40px 0;
     
 }
 
 #materials .datos{
-    padding: 150px 30px;
+    padding: 150px 50px;
 }
 
 #materials .datos h3{
@@ -441,54 +440,48 @@ header .bag-button .counter-products{
 }
 
 #materials .imagenes img{
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 #materials .imagen img{
+    max-width: 100%;
     position: relative;
-    left: 71px;
+    left: 12px;
     bottom: -150px;
 }
 
 #materials .imagen::before{
     content: "";
-    width: 250px;
+    width: 240px;
     height: 300px;
     background: #f7f7f7;
     position: absolute;
     z-index: -1;
     bottom: 290px;
-    right: -109px;
+    right: 1px;
     border-radius: 20px 0;
 }
 
 #materials .imagen img{
-    box-shadow: -11px 14px 19px -10px #af7d43;
+    box-shadow: 11px 20px 19px -10px #af7d43;
 }
 
-/* desde aca pasamos a los textimonial */
-
-#textimonials{
+/* Estilos de Reviews */
+#reviews{
     width: 100%;
     position: relative;
     padding: 90px 0;
     text-align: center;
-    margin: auto;
 }
 
-#textimonials .slider-reviews {
-    display: flex;
-    gap: 60px; /* separación entre tarjetas */
-}
-
-#textimonials h3{
+#reviews h3{
     color: var(--primary-color);
     text-transform: uppercase;
     font-size: 18px;
     padding: 10px 0;
 }
 
-#textimonials h2{
+#reviews h2{
     font-size: var(--fs-title2);
     font-weight: 700;
     margin-bottom: 40px;
@@ -496,66 +489,63 @@ header .bag-button .counter-products{
     text-transform: uppercase;
 }
 
-#textimonials .card-review{
+#reviews .card-reviews{
     position: relative;
-    padding: 0 30px;
 }
-#textimonials .card-review .cont-info {
+
+#reviews .card-reviews .cont-info{
     background: var(--white-color);
     position: absolute;
-    width: 80%;
+    width: 78%;
     bottom: 20px;
-    border-radius: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 50px 20px 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    left: 10%;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-#textimonials .card-review .cont-info img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
+#reviews .card-reviews .cont-info img{
     position: absolute;
     top: -35px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 5px solid #fff;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border: 10px solid #fff;
     border-radius: 50%;
 }
-#textimonials .star {
-    margin-top: 10px;
-    color: var(--primary-color);
-    font-size: 18px;
-}
 
-#textimonials .star i {
-    margin: 0 2px;
-}
-#textimonials .star i:nth-child(5){
-    opacity: 0.7;
-}
-#textimonials .card-review h4 {
-    margin-top: 20px;
-    font-weight: 600;
+#reviews .card-reviews .cont-info h4{
+    font-size: var(--fs-titel4);
     color: var(--dark-color);
-}
-
-#textimonials .card-review h5 {
-    font-size: 14px;
-    color: #8e8e8e;
     margin-bottom: 10px;
-    
+    font-weight: 700;
 }
 
-#textimonials .card-review p {
-    font-size: 15px;
+#reviews .card-reviews .cont-info h5{
+    font-size:12px;
+    color: var(--dark-color);
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#reviews .card-reviews .cont-info p{
+    font-size: 11px;
     color: var(--dark-color);
     line-height: 1.6;
     padding: 0 15px;
 }
 
-#textimonials .slick-arrow{
+#reviews .star i{
+    color: #faac54;
+}
+
+#reviews .star i:nth-child(5){
+    opacity: 0.5;
+}
+
+#reviews .slick-arrow{
     background: var(--white-color);
     width: 20px;
     padding: 20px;
@@ -570,66 +560,221 @@ header .bag-button .counter-products{
     top: 50%;                  /* lo manda al centro vertical */
     transform: translateY(-50%);
 }
-#textimonials .slick-arrow::before{
+
+#reviews .slick-arrow::before{
     color: #0d1b39;
 }
 
-/* aca ponfgo el footer */
-footer {
-    background: #f7f7f7;
-    color: var(--white-color);
+footer{
     padding: 60px 0 20px;
-}
-footer h2{
-    color: var(--dark-color);
-    font-weight: 600;
-    font-size: var(--fs-title2);
-}
-footer h3 {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    font-size: var(--fs-title3);
-    font-weight: 600;
+    background: #f7f7f7;
 }
 
-footer p, footer a {
+footer .infor a{
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 25px;
     color: var(--dark-color);
-    font-size: var(--fs-text);
-    font-weight: 400;
+    line-height: 1.6;
+    padding: 0 15px;
     text-decoration: none;
-
 }
 
-footer a:hover {
+footer .infor p{
+    font-size: 15px;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 0 15px;
+    padding-top: 20px;
+}
+
+footer .texto h3{
     color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 0;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
+footer .texto p{
+    font-size: 15px;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+footer .texto a{
+    color: var(--dark-color);
+    text-decoration: none;
+    display: block;
+    padding:10px 0;
 }
 
-footer ul li {
-    margin-bottom: 10px;
+footer .derechos{
+    padding-top: 70px;
 }
 
-footer .social-links a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-footer .row:last-child {
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-top: 15px;
-    margin-top: 30px;
+footer .derechos p{
+    font-size: 15px;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 0 15px;
 }
 
 /*6.Estilo de responsive Tablet */
 @media screen and (min-width:768px) and (max-width:1080px){
+    header .bag-button{
+        display: none;
+    }
+    .navbar-toggler {
+        background: white;
+    }
+    #hero {
+        padding: 90px 40px;
+    }
 
+    header {
+        height: 90vh;
+    }
+
+    #hero h2 {
+        font-size: 70px;
+    }
+
+    #hero p {
+        padding: 20px 200px;
+    }
+
+    #experiences .img img{
+        width: 100%;
+    }
 }
 /*7.Estilo de responsive Smartphone*/
 @media screen and (min-width:320px) and (max-width:767px){
+    .navbar-toggler {
+        background: white;
+        font-size: 13px;
+    }
+    header {
+        height: 50vh;
+    }
+    header .bag-button{
+        display: none;
+    }
+    #hero {
+        padding: 10px 100px;
+    }
+    #hero h2 {
+        font-size: 18px;
+    }
+    #hero p {
+        font-size: 9px;
+        padding: 0 20px;
+    }
+    #hero form{
+        width: 60px;
+        margin: inherit;
+    }
+    #hero form input{
+        width: 200px;
+        font-size: 10px;
+    }
+    #hero form button{
+        width: 30px;
+        height: 30px;
+        left: 260%;
+        top: 18%;
+    }
+    .navbar>.container{
+        padding: 0 30px;
+    }
+    #choosing {
+        padding: 100px 0;
+        text-align: center;
+    }
+    #choosing h2{
+        font-size: 30px;
+        padding-top: 0;
+    }
+    #choosing h3{
+        padding-top: 20px;
+    }
+    #choosing p{
+        text-align: justify;
+        padding: 0 30px;
+    }
+    #products{
+        padding: 30px 0 0 0;
+    }
+    #products ul{
+        width: 350px;
+        justify-content: center;
+    }
+    #products li button{
+        padding: 10px 20px;
+    }
+    #experiences .img img {
+        width: 100%;
+    }
+    #experiences .img::before{
+        top: -9px;
+    }
+    #experiences .info {
+        padding: 30px 30px;
+        text-align: center;
+    }
+    #experiences .info p{
+        text-align: justify;
+    }
+    #experiences .info h3{
+        padding-top: 30px;
+    }
+    #experiences .info h2 {
+        font-size: 30px;
+    }
+    #experiences{
+        padding: 100px 0 0 0;
+    }
+    #experiences .img::after{
+        bottom: 20px;
+    }
+    #materials{
+        padding: 0;
+    }
+    #materials .datos{
+        padding: 90px 30px;
+        text-align: center;
+    }
+    #materials .datos h2{
+        font-size: 28px;
+    }
+    #materials .datos p{
+        margin-top: 10px;
+        text-align: justify;
+    }
+    #materials .imagen::before{
+        bottom: 60px;
+    }
+    #materials .imagen img{
+        bottom: 500px;
+        left: 26px;
+    }
     
+    #reviews{
+        padding: 150px 0;
+    }
+    .slick-slide{
+        padding: 0 25px;
+    }
+    #reviews .slick-arrow{
+        width: 15px;
+    }
+    footer{
+        padding: 0 20px;
+        text-align: center;
+    }
+    footer .texto{
+        text-align: justify;
+    }
+    footer .derechos{
+        text-align: center;
+    }
+
 }
