@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- En el <head> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -59,7 +62,7 @@
 
         <div id="hero">
             <div id="carouselHeroSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="carousel-item active">
                         <h2>Make Your Interior More <br> Minimalistic & Modern</h2>
                         <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
@@ -86,7 +89,7 @@
     <main>
 
         <section id="choosing">
-            <div class="container">
+            <div class="container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <h2>Why <br> Choosing Us</h2>
@@ -148,7 +151,7 @@
 
                         <div class="slider-products">
                             <div class="card-product">
-                                <div class="cont-img">
+                                <div class="cont-img" data-aos="zoom-out-left">
                                     <img src="img/imagen 1.png" alt="foto Producto">
                                 </div>
                                 <div class="cont-info">
@@ -816,7 +819,7 @@
             </div>
         </section>
 
-        <section id="experiences">
+        <section id="experiences" >
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 img">
@@ -845,7 +848,7 @@
                         <a href="#">More Info <i class="bi bi-arrow-right"></i></a>
                     </div>
                     <div class="col-md-6">
-                        <div class="row">
+                        <div class="row" >
                             <div class="col-md-4 imagenes">
                                 <img src="img/Rectangle 1450.png" alt="silla">
                                 <img src="img/Rectangle 1450 (1).png" alt="sofa">
@@ -1016,7 +1019,10 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
